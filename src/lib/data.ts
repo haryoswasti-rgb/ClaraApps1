@@ -37,7 +37,7 @@ export const cars: Car[] = [
   { id: "panther-1", name: "Isuzu Panther", image: pantherImg, capacity: 8, type: "MPV" },
 ];
 
-const API_URL_KEY = "bps_sheets_api_url";
+const API_URL_KEY = "https://script.google.com/macros/s/AKfycbz-Wk_fHgwE8Xj_JAVrEqD5-VkEKtrzhfz716uobO6JonuNoEHw93HbNmwQDiuvGdas/exec";
 const BOOKINGS_KEY = "bps-car-bookings";
 
 function resolveCarName(carId?: string, carName?: string) {

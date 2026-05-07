@@ -58,7 +58,7 @@ export default function SettingsPage() {
           <Input
             value={url}
             onChange={(e) => setUrl(e.target.value)}
-            placeholder="https://script.google.com/macros/s/xxxxx/exec"
+            placeholder="https://script.google.com/macros/s/AKfycbz-Wk_fHgwE8Xj_JAVrEqD5-VkEKtrzhfz716uobO6JonuNoEHw93HbNmwQDiuvGdas/exec"
           />
         </div>
 

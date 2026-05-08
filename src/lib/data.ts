@@ -37,8 +37,9 @@ export const cars: Car[] = [
   { id: "panther-1", name: "Isuzu Panther", image: pantherImg, capacity: 8, type: "MPV" },
 ];
 
-const API_URL_KEY = "https://script.google.com/macros/s/AKfycbz-Wk_fHgwE8Xj_JAVrEqD5-VkEKtrzhfz716uobO6JonuNoEHw93HbNmwQDiuvGdas/exec";
+const API_URL_KEY = "bps_sheets_api_url";
 const BOOKINGS_KEY = "bps-car-bookings";
+const DEFAULT_API_URL = "https://script.google.com/macros/s/AKfycbzQlsCCLVg5gDnROLi9PtrQmEi6_w1bun2ewviTPJyuL9VT0Y233tbQooK9Qqbqc4g/exec";
 
 function resolveCarName(carId?: string, carName?: string) {
   return carName || cars.find((car) => car.id === carId)?.name || "";
@@ -85,7 +86,7 @@ function normalizeBooking(booking: Partial<Booking>): Booking {
 }
 
 export function getApiUrl(): string {
-  return localStorage.getItem(API_URL_KEY) || "";
+  return localStorage.getItem(API_URL_KEY) || DEFAULT_API_URL;
 }
 
 export function setApiUrl(url: string) {
